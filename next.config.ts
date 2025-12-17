@@ -5,7 +5,14 @@ const withMDX = createMDX();
 
 const nextConfig: NextConfig = {
   /* config options here */
-  reactStrictMode:true
+  reactStrictMode:true,
+  images:{
+    remotePatterns:[
+      {
+        hostname:"*"
+      }
+    ]
+  }
 
 
 };

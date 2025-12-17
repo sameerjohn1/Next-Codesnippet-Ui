@@ -7,6 +7,13 @@ import { BrowseBlocksButton } from "../ui/browse-bloacks";
 import TailwindCSS from "../icons/tailwindcss";
 import Features from "./features";
 import Link from "next/link";
+import Card02 from "../codesnippetui/card/card-02";
+import Card08 from "../codesnippetui/card/card-08";
+import Profile01 from "../codesnippetui/profile/profile-01";
+import AIInput_03 from "../codesnippetui/ai-input/ai-input-03";
+import Btn02 from "../codesnippetui/button/btn-02";
+import Btn08 from "../codesnippetui/button/btn-08";
+import Input09 from "../codesnippetui/input/input-09";
 
 const HeroSection = () => {
   return (
@@ -101,7 +108,7 @@ const HeroSection = () => {
             <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
               Card
             </span>
-            {/* <Card/> */}
+            <Card08 />
           </div>
 
           {/* action search bar */}
@@ -110,7 +117,7 @@ const HeroSection = () => {
               Components
             </span>
 
-            {/* <ActionSearchBar/> */}
+            <Profile01 />
           </div>
         </motion.div>
 
@@ -126,6 +133,7 @@ const HeroSection = () => {
 
           <div className="w-full h-48 rounded-xl border border-zinc-200 dark:border-zinc-800 flex items-center justify-center">
             {/* Ai input */}
+            <AIInput_03 />
           </div>
         </motion.div>
 
@@ -136,23 +144,28 @@ const HeroSection = () => {
           className="w-full grid grid-cols-1 md:grid-cols-2 gap-6"
         >
           <div className="w-full ">
-            <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
-              Buttons
-            </span>
-          </div>
+            <div className="w-full h-48 rounded-xl border border-zinc-200 dark:border-zinc-800 flex flex-col gap-3 items-center justify-center">
+              {/* Ai input */}
+              <Link href={"/docs/components/button"}>
+                {/* Buttons */}
+                <Btn02 />
+              </Link>
 
-          <div className="w-full h-48 rounded-xl border border-zinc-200 dark:border-zinc-800 flex flex-col gap-3 items-center justify-center">
-            {/* Ai input */}
-            <Link href={"/docs/components/button"}>{/* Buttons */}</Link>
-
-            <Link href={"/docs/components/button"}>{/* Buttons */}</Link>
+              <Link href={"/docs/components/button"}>
+                {/* Buttons */}
+                <Btn08 />
+              </Link>
+            </div>
           </div>
 
           <div className="w-full ">
             <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
               Input
             </span>
-            <Link href={"/docs/components/input"}>{/* inputs */}</Link>
+            <Link href={"/docs/components/input"}>
+              {/* inputs */}
+              <Input09 />
+            </Link>
           </div>
         </motion.div>
       </div>

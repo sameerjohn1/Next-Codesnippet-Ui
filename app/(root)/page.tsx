@@ -15,6 +15,7 @@ import AIInput_14 from "@/components/codesnippetui/ai-input/ai-input-14";
 import AIInput_15 from "@/components/codesnippetui/ai-input/ai-input-15";
 import AIInput_16 from "@/components/codesnippetui/ai-input/ai-input-16";
 import AIInput_17 from "@/components/codesnippetui/ai-input/ai-input-17";
+import Faq01 from "@/components/codesnippetui/faq/faq-01";
 import HeroSection from "@/components/landing/hero";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col justify-center gap-10 max-w-7xl items-center mx-auto">
+        {/* <Faq01 /> */}
         {/* <AIInput_01 />
         <AIInput_02 />
         <AIInput_03 />

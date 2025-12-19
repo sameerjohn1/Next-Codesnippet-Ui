@@ -12,4 +12,4 @@ export const meta=defineCollections({
   type:"meta",
   dir:"content/docs",
   schema:metaSchema
-})
+})  
